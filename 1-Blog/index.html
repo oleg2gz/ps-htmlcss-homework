@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,17 +16,10 @@
 
   <body>
     <header class="header container-layer">
-      <a href="#">
-        <div class="logo-block">
-          <div class="logo-square">
-            <img
-              src="./assets/img/logo.svg"
-              alt="Лого этого блога в виде латинской буквы B"
-            />
-          </div>
-          <p>Мой блог</p>
-        </div></a
-      >
+      <a class="logo" href="#">
+        <span class="logo-square">B</span>
+        <span>Мой блог</span>
+      </a>
 
       <nav>
         <ul class="menu">
@@ -35,7 +29,7 @@
         </ul>
       </nav>
 
-      <div class="search">
+      <form class="search">
         <input
           class="search__input blured"
           type="search"
@@ -47,15 +41,15 @@
           src="./assets/img/search.svg"
           alt="Иконка поиска"
         />
-      </div>
+      </form>
     </header>
 
     <main class="container-layer">
       <article class="article">
         <p class="category">
           <span class="category__name blured">Frontend</span>
-          <img src="./assets/img/rect-separator.svg" alt="Разделитель текста" />
-          <span class="blured">12 мая 2024</span>
+          <img src="./assets/img/rect-separator.svg" alt="*" />
+          <time class="blured" datetime="2024-05-12">12 мая 2024</time>
         </p>
 
         <h1 class="title">
@@ -63,25 +57,27 @@
           потребителей
         </h1>
 
-        <div class="author-details">
+        <div class="author">
           <img
-            class="author-avatar"
+            class="author__avatar"
             src="./assets/img/author.png"
             alt="Маленькое фото автора статьи"
           />
-          <p>
+          <p class="author__details">
             Наталья Васильева<br />
-            <span class="job-title blured">Разработчик</span>
+            <span class="author__job-title blured">Разработчик</span>
           </p>
         </div>
 
-        <img
-          class="main-image"
-          src="./assets/img/display.jpg"
-          alt="Дисплей компьютера с изображением красно-жёлтой цветовой гаммы"
-          width="896"
-          height="594"
-        />
+        <figure class="image-container">
+          <img
+            class="main-image"
+            src="./assets/img/display.jpg"
+            alt="Дисплей компьютера с изображением красно-жёлтой цветовой гаммы"
+            width="896"
+            height="594"
+          />
+        </figure>
 
         <p class="text-content accented-text">
           Теория цвета — это особенности эмоционального восприятия человеком тех
@@ -106,6 +102,7 @@
             class="link"
             href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing"
             target="_blanc"
+            title="Ссылка на источник"
             >Impact of color on marketing</a
           >) говорится, что использование разных цветов может существенно влиять
           на настроение и поведение потребителей. Утверждается, что от 60 до 90%
@@ -117,14 +114,17 @@
 
     <footer class="footer container-layer">
       <p class="blured">
-        Все права защищены &copy; <span id="current-year">2024</span>
+        Все права защищены &copy;
+        <time datetime="2024" data-time>2024</time>
       </p>
     </footer>
 
     <script>
-      document.getElementById('current-year').textContent = new Date()
-        .getFullYear()
-        .toString()
+      const footerTimeElement = document.querySelector('[data-time]')
+      const currentYear = new Date().getFullYear().toString()
+
+      footerTimeElement.setAttribute('datetime', currentYear)
+      footerTimeElement.textContent = currentYear
     </script>
   </body>
 </html>
