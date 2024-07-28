@@ -110,6 +110,12 @@ a {
   align-items: center;
 }
 
+.category,
+.title,
+.footer {
+  text-align: center;
+}
+
 .category {
   margin-bottom: 14px;
   display: flex;
@@ -158,26 +164,21 @@ a {
 
 .text-content {
   max-width: 708px;
-}
-
-.text-content:not(:last-of-type) {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .accented-text {
   font-size: 20px;
 }
 
-.category,
-.title,
 .footer {
-  text-align: center;
+  padding-bottom: 70px;
 }
+
+/* Utility */
 
 .blured {
   opacity: 0.6;
-}
-
-.footer {
-  padding-bottom: 70px;
 }
