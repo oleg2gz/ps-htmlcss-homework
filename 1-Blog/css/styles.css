@@ -13,8 +13,8 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
   background-image: linear-gradient(#374151, #111827);
   color: #fff;
   margin: 0;
@@ -35,29 +35,35 @@ a {
   text-decoration: underline;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .container-layer {
-  max-width: 856px;
-  padding: 35px 8px;
+  max-width: calc(1080px + 1rem);
+  padding: 16px 0.5rem 53px;
   margin: 0 auto;
 }
 
 .header {
+  padding-top: 71px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .logo {
+  font-size: 18px;
+  margin-right: 52px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
 .logo-square {
-  font-size: 18px;
-  background-color: #4b5563;
   width: 35px;
   height: 35px;
+  background-color: #4b5563;
   margin-right: 11px;
   display: flex;
   justify-content: center;
@@ -67,7 +73,16 @@ a {
 .menu {
   list-style: none;
   display: flex;
-  gap: 50px;
+  /* gap: 50px; */
+}
+
+.menu a {
+  padding: 12px 25px;
+}
+
+.menu a:hover,
+.menu a:focus {
+  outline: 1px solid #fff;
 }
 
 .search {
@@ -76,11 +91,11 @@ a {
 }
 
 .search__input {
-  background-color: #1f2937;
-  color: inherit;
   width: 224px;
   height: 40px;
   font-size: inherit;
+  background-color: #1f2937;
+  color: inherit;
   padding: 0 16px 0 50px;
   border: none;
   border-radius: 10000px;
@@ -117,6 +132,7 @@ a {
 }
 
 .category {
+  font-size: 14px;
   margin-bottom: 14px;
   display: flex;
   justify-content: center;
@@ -151,15 +167,16 @@ a {
 }
 
 .image-container {
-  margin: 0 0 70px;
+  overflow: hidden;
+  margin: 0 0 69px;
+  border-radius: 6px;
 }
 
 .main-image {
   width: 100%;
-  height: auto;
   max-width: 896px;
-  border-radius: 6px;
-  display: inline-block;
+  height: auto;
+  display: block;
 }
 
 .text-content {
@@ -173,8 +190,12 @@ a {
   font-size: 20px;
 }
 
+.text-content p:not(.accented-text) {
+  line-height: 1.875;
+}
+
 .footer {
-  padding-bottom: 70px;
+  padding-bottom: 77px;
 }
 
 /* Utility */
