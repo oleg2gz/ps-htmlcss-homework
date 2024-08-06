@@ -41,8 +41,9 @@ ul {
 }
 
 .container-layer {
-  max-width: calc(1080px + 1rem);
-  padding: 16px 0.5rem 53px;
+  width: 90%;
+  max-width: 1080px;
+  padding: 16px 0 53px;
   margin: 0 auto;
 }
 
