@@ -49,15 +49,15 @@ ul {
 
 .header {
   padding-top: 71px;
+
   display: flex;
   align-items: center;
+  gap: 41px;
 }
 
 .logo {
   font-size: 18px;
-  margin-right: 52px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -65,16 +65,20 @@ ul {
   width: 35px;
   height: 35px;
   background-color: #4b5563;
-  margin-right: 11px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.logo-name {
+  padding: 8px 11px;
+}
+
 .menu {
   list-style: none;
+
   display: flex;
-  /* gap: 50px; */
 }
 
 .menu a {
@@ -88,6 +92,7 @@ ul {
 
 .search {
   margin-left: auto;
+
   position: relative;
 }
 
@@ -106,6 +111,7 @@ ul {
   width: 14px;
   height: 14px;
   opacity: 0.1;
+
   position: absolute;
   top: 12px;
   left: 18px;
@@ -135,6 +141,7 @@ ul {
 .category {
   font-size: 14px;
   margin-bottom: 14px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,6 +159,7 @@ ul {
 .author {
   width: 214px;
   margin-bottom: 28px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,11 +185,13 @@ ul {
   width: 100%;
   max-width: 896px;
   height: auto;
+
   display: block;
 }
 
 .text-content {
   max-width: 708px;
+
   display: flex;
   flex-direction: column;
   gap: 30px;
