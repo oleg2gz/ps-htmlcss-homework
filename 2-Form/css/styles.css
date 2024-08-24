@@ -69,6 +69,7 @@ body {
   color: var(--black-color);
   margin: 0;
   padding: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,6 +162,7 @@ input:focus {
   color: var(--white-color);
   padding: 9px 22px;
   border: 1px solid var(--btn-bg);
+
   display: flex;
   align-items: center;
 }
@@ -205,6 +207,7 @@ input:focus {
   content: '✔';
   background-color: var(--btn-bg);
   color: var(--white-color);
+
   display: flex;
   justify-content: center;
   align-items: center;
