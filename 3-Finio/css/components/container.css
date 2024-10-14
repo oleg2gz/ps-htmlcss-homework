@@ -1,0 +1,24 @@
+.container-inner,
+.container-outer {
+  margin-inline: auto;
+  overflow-x: hidden;
+
+  /* border: 2px solid red; */
+}
+
+.container-inner {
+  width: var(--container-inner-width, 90%);
+  max-width: var(--container-inner-max-width, 960px);
+}
+
+.container-outer {
+  width: var(--container-outer-width, 90%);
+  max-width: var(--container-outer-max-width, 960px);
+  padding-inline: var(--container-gap, 0);
+}
+
+@media (max-width: 576px) {
+  .min-content-wrapper {
+    max-width: var(--min-content);
+  }
+}

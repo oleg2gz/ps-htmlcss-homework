@@ -1,0 +1,29 @@
+.badge {
+  width: max-content;
+  font-size: var(--font-size-17);
+  color: var(--white-color);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-8);
+}
+
+.badge--price {
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: var(--badge-price-color);
+}
+
+.badge--transparent {
+  color: inherit;
+}
+
+.badge--discount {
+  font-size: var(--font-size-15);
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 4px 16px;
+  background-color: var(--badge-discount-color);
+}
+
+.badge--discount span {
+  font-weight: 900;
+}

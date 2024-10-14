@@ -1,0 +1,33 @@
+.btn {
+  width: max-content;
+  font: inherit;
+  font-size: var(--font-size-17);
+  font-weight: 900;
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  transition: opacity 300ms;
+
+  display: block;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+}
+
+.btn--primary {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
+.btn--secondary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding-inline: 32px;
+  }
+}
