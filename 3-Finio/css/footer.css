@@ -4,6 +4,10 @@
   padding-block: 64px;
 }
 
+.footer__container {
+  overflow: hidden;
+}
+
 .footer__wide-box {
   display: flex;
   flex-direction: column;

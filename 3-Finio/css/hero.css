@@ -27,13 +27,13 @@
   max-width: 334px;
 
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  flex-direction: column;
   gap: 10px;
 }
 
-.hero__brands > * {
-  flex: 1;
+.hero__brands > div {
+  display: flex;
+  gap: 10px;
 }
 
 @media (min-width: 576px) {
@@ -76,6 +76,7 @@
   .hero {
     min-height: 700px;
     background-position: right 0px bottom 10%, left 0% bottom 65%;
+    background-size: 60%, auto;
   }
 
   .hero__title {
