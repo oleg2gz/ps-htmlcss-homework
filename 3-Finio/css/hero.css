@@ -1,0 +1,93 @@
+.hero {
+  min-height: 500px;
+  background-color: var(--accent-color);
+  background-image: url('../assets/background/hero-bg.svg');
+  background-repeat: no-repeat;
+  background-position: left 0% bottom 50%;
+  background-size: auto;
+  padding-block-start: 32px;
+}
+
+.hero__title {
+  max-width: 470px;
+  font-size: var(--font-size-32);
+  font-weight: var(--font-weight-extraBold);
+  color: var(--white-color);
+  margin-block-end: 32px;
+
+  /* Контраст текста и фона */
+  /* text-shadow: 0 0 20px #242424; */
+}
+
+.hero__btn {
+  margin-block-end: 56px;
+}
+
+.hero__brands {
+  max-width: 334px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero__brands > div {
+  display: flex;
+  gap: 10px;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url('../assets/img/app-on-macbook.png'),
+      url('../assets/background/hero-bg.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 0px bottom 0%, left 0% bottom 50%;
+    background-size: 55%, auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero__brands {
+    transform: scale(0.85) translate(-9%);
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    min-height: 600px;
+    background-position: right 0px bottom -5%, left 0% bottom 60%;
+    background-size: 65%, auto;
+    padding-block-start: 95px;
+  }
+
+  .hero__title {
+    margin-block-end: 40px;
+  }
+
+  .hero__btn {
+    margin-block-end: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    min-height: 700px;
+    background-position: right 0px bottom 10%, left 0% bottom 65%;
+    background-size: 60%, auto;
+  }
+
+  .hero__title {
+    max-width: 515px;
+    font-size: var(--font-size-40);
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    min-height: 770px;
+    background-position: right 5% bottom -5%, left 0% bottom 90%;
+  }
+}

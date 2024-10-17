@@ -1,0 +1,19 @@
+nav a {
+  font-size: 1.125rem; /* 18px */
+  color: var(--white-color);
+  text-decoration: none;
+  padding-block: 0.85em;
+  opacity: 0.8;
+  display: block;
+}
+
+nav a:hover,
+nav a:focus {
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  nav li:not(:last-child) {
+    border-bottom: 1px dotted #a190b6;
+  }
+}

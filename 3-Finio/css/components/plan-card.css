@@ -1,0 +1,151 @@
+.plan-card {
+  padding: 48px 24px;
+  border-radius: var(--border-radius-8);
+  box-shadow: 0 0 32px 0 rgba(78, 93, 124, 0.16);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    'discount discount'
+    'title    title'
+    'desc     desc'
+    'info     info'
+    'btn      btn';
+}
+
+.plan-card__discount {
+  grid-area: discount;
+}
+
+.plan-card__title {
+  font-size: var(--font-size-32);
+  font-weight: 900;
+  line-height: 1.2;
+
+  grid-area: title;
+}
+
+.plan-card__desc {
+  color: var(--text-gray-color-50);
+
+  grid-area: desc;
+}
+
+.plan-card__details {
+  color: var(--text-gray-color);
+
+  grid-area: info;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: 52px 1px;
+  grid-template-areas:
+    'a b'
+    'sep-1 sep-1'
+    'c d'
+    'sep-2 sep-2'
+    'e f';
+  align-items: center;
+}
+
+.plan-card__total-label {
+  grid-area: a;
+}
+
+.plan-card__total-value {
+  grid-area: b;
+}
+
+.plan-card__profit-label {
+  grid-area: c;
+}
+
+.plan-card__profit-value {
+  grid-area: d;
+}
+
+.plan-card__monthly-label {
+  grid-area: e;
+}
+
+.plan-card__monthly-value {
+  grid-area: f;
+}
+
+.plan-card__separator {
+  height: 1px;
+  background-color: rgba(78, 93, 124, 0.08);
+}
+
+.separator-1 {
+  grid-area: sep-1;
+}
+
+.separator-2 {
+  grid-area: sep-2;
+}
+
+.plan-card__btn {
+  width: 100%;
+
+  grid-area: btn;
+}
+
+.plan-card__discount,
+.plan-card__title,
+.plan-card__desc,
+.plan-card__details {
+  margin-block-end: 16px;
+}
+
+.plan-card--accented {
+  background-color: var(--accent-color);
+}
+
+.plan-card--accented .plan-card__title,
+.plan-card--accented .plan-card__details {
+  color: var(--white-color);
+}
+
+.plan-card--accented .plan-card__desc {
+  color: var(--white-color-60);
+}
+
+.plan-card--accented .plan-card__separator {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .plan-card {
+    padding: 48px 40px 57px;
+  }
+
+  .plan-card__discount {
+    margin-block-end: 31px;
+  }
+
+  .plan-card__title {
+    margin-block-end: 23px;
+  }
+
+  .plan-card__desc {
+    margin-block-end: 40px;
+  }
+
+  .plan-card__details {
+    margin-block-end: 25px;
+  }
+}
+
+@media (min-width: 1400px) {
+}

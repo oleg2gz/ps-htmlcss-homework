@@ -1,0 +1,100 @@
+.header {
+  background-color: var(--accent-color);
+}
+
+.header__container {
+  padding-block: 28px 19px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__mobile-view {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__mobile-menu-btn {
+  background: none;
+  padding: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__mobile-menu-btn:hover,
+.header__mobile-menu-btn:focus {
+  border: 1px solid var(--white-color-70);
+  border-radius: var(--border-radius-8);
+}
+
+/* Скрыть меню в шапке */
+.header__nav,
+.header__btn {
+  display: none;
+}
+
+.header__btn {
+  margin-block-start: 0.85em;
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .header__logo {
+    font-size: var(--font-size-24);
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .header__mobile-menu-btn {
+    display: none;
+  }
+
+  /* Показать меню в шапке */
+  .header__nav,
+  .header__btn {
+    display: block;
+  }
+
+  .header__nav-list {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header__container {
+    border-block-end: 1px solid var(--white-color-16);
+  }
+}
+
+@media (min-width: 992px) {
+  .header__container {
+    padding-block-start: 40px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__mobile-view {
+    width: auto;
+  }
+
+  .btn.header__btn {
+    margin-block: 0;
+
+    align-self: center;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
